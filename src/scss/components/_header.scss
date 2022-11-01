@@ -1,14 +1,20 @@
+.container{
+    max-width: 200rem;
+    padding: 0;
+    .img{
+        display: block;
+        width: 100%;
+    }
+}
+
 .header{
     
     
 
-    img{
-        display: block;
-    }
+    
     .container{
         position: relative;
-        padding: 0;
-        max-width: 2000px;
+        
         width: 100%;
         margin: 0 auto;
 
@@ -24,11 +30,11 @@
         
         &::before{
             transform: translateX(-100%) scaleX(-1);
-            left: -1px;
+            left: 1px;
         }
         
         &::after{
-            right: 0;
+            right: 1px;
             transform: translateX(100%) scaleX(-1);
         }
         &:first-child{
