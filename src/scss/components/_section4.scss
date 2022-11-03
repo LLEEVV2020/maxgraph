@@ -1,8 +1,35 @@
 .payment-module{
-
+  display: flex;
+  p{
+    color: #00396E;
+    font-size: 3.88rem;
+    line-height: 1.213;
+    margin-bottom: 5rem;
+  }
+  h2.title{
+    margin-bottom: 11rem;
+  }
 }
 
-.section4{
+.payment-module{
+  height: 100%;
+}
 
+
+.payment-module__img{
+  margin-left: auto;
+  margin-top: auto;
+  img{
+    width: 96.2rem;
+    height: 91.6rem;
+  }
+}
+
+
+.section4{
+  .container {
+    padding-top: 10.2rem;
+    padding-left: 11rem;
+  }
 
 }
