@@ -21,6 +21,9 @@
   }
   img{
     width: 190rem;
-    transform: translateX(-8rem) translateY(0rem);
+    transform: scale(1.03) translateX(-8.5rem) translateY(-0.9rem);
   }
+}
+.solution__list{
+  display: flex;
 }
