@@ -25,6 +25,8 @@
   min-height: 68rem;
   justify-content: flex-end;
   display: flex;
+  padding-right: 6.5rem;
+  padding-top: 2rem;
   &::before{
     content: "";
     position: absolute;
@@ -39,11 +41,30 @@
 }
 
 .solution_title{
-  font-size: 5.5rem;
+  font-size: 5.1rem;
   color: #00396E;
   font-weight: 900;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  img{
+    width: 7.1rem;
+    margin-right: 1.65rem;
+    transform: translateY(-1rem);
+  }
 }
 .solution_li{
-  font-size: 4rem;
+  font-size: 3.1rem;
+}
+
+.solution__item{
+  & + .solution__item{
+    margin-left: 1rem;
+  }
+  &:first-child{
+
+  }
+  &:last-child{
+
+  }
 }
