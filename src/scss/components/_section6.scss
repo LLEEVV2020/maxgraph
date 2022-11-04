@@ -1,0 +1,40 @@
+.section6 {
+  .container{
+    padding-top: 8.2rem;
+    padding-left: 11rem;
+  }
+}
+
+.statistics__container{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 6rem;
+  padding-left: 1rem;
+}
+
+.statistics{
+  h2.title{
+    margin-bottom: 0;
+  }
+  p{
+    font-size: 4.45rem;
+    margin-bottom: 5.8rem;
+  }
+
+
+
+}
+.statistics__left{
+  img{
+    margin-top: 3.6rem;
+    width: 58.5rem;
+    margin-left: 1rem;
+    transform: translateX(-3rem);
+  }
+}
+.statistics__right{
+  img{
+    width: 87.3rem;
+    height: 76.3rem;
+  }
+}
