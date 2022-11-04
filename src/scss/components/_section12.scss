@@ -1,0 +1,19 @@
+.section12{
+  &__title{
+    font-size: 6rem;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__items_item{
+    text-align: center;
+  }
+  &__item-title{
+
+  }
+  &__item-caption{
+    
+  }
+}
