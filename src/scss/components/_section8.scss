@@ -1,0 +1,20 @@
+.section8 {
+  .container{
+    padding-top:9rem;
+    padding-left: 11rem;
+  }
+  h2.title{
+    margin-bottom: 0;
+  }
+
+
+}
+.format{
+  display: flex;
+  flex-direction: column;
+  img{
+    margin-left: auto;
+    width: 142rem;
+    transform: translate(-4rem, -5rem);
+  }
+}
