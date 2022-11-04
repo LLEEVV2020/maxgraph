@@ -1,0 +1,26 @@
+ul{
+  list-style-type: none;
+}
+.section14{
+  &__span{
+    color: #00396E;
+    font-size: 12rem;
+  }
+  &__title{
+    color: #49423d;
+    font-size: 5rem;
+  }
+  &-inner{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.text-list__item{
+  color: #49423d;
+  font-style: bold;
+  font-size: 4rem;
+}
+.text-list__item span{
+  color: #00396E;
+}
