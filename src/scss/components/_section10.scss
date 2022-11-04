@@ -17,8 +17,33 @@
     margin-top: 0;
   }
 
-  img{
-    width: 85rem;
-    transform: scaleX(.8) translate(-17rem, -4rem);
+
+}
+
+.solution__list{
+  position: relative;
+  min-height: 68rem;
+  justify-content: flex-end;
+  display: flex;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/section10.webp);
+    background-size: cover;
+    width: 84rem;
+    height: 68.5rem;
+    transform: scaleX(0.82) translate(-15.8rem, -3.7rem);
   }
+}
+
+.solution_title{
+  font-size: 5.5rem;
+  color: #00396E;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.solution_li{
+  font-size: 4rem;
 }
