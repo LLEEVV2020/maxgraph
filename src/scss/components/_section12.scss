@@ -1,7 +1,4 @@
 .section12{
-  &__title{
-    font-size: 6rem;
-  }
   &__items{
     display: flex;
     justify-content: space-between;
@@ -10,10 +7,15 @@
   &__items_item{
     text-align: center;
   }
+  &__item-image{
+    width: 44rem;
+    margin-top: -35px;
+    height: 44rem;
+  }
   &__item-title{
-
+ font-size: 8rem;
   }
   &__item-caption{
-    
+font-size: 4rem;
   }
 }
