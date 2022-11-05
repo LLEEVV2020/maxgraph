@@ -89,13 +89,15 @@ h2{
     h2{
         &.title{
             max-width: 65rem;
-
+            @media screen and (max-width: 800px){
+              max-width: inherit;
+            }
             margin-bottom: 1.6rem;
         }
     }
 }
 
-.how-works__item:not(:last-child){
+.how-works__item{
     position: relative;
     &::after{
         content: "";
@@ -103,15 +105,18 @@ h2{
         background-size: cover;
         position: absolute;
         right: 0;
-        top: 17.5rem;
-        width: 15.7rem;
-        height: 18rem;
+        top: 10.9375em;
+        width: 9.8125em;
+        height: 11.25em;
         transform: translateX(100%);
 
         @media screen and (max-width: 800px){
-          display: none;
+          font-size: 1rem;
         }
 
+    }
+    &:last-child::after{
+      display: none;
     }
 }
 
@@ -139,12 +144,17 @@ h2{
 .how-works__list{
     display: flex;
    justify-content: space-between;
+   @media screen and (max-width: 800px){
+    flex-wrap: wrap;
+  }
 }
 
-.how-works__item
-{
-    &:nth-child(1){
+.how-works__item{
+  @media screen and (max-width: 800px){
 
+  }
+    &:nth-child(1){
+      width: 50%;
         .how-works__img{
             margin-left: 9rem;
             img{
@@ -152,11 +162,29 @@ h2{
                 height: 14.2rem;
             }
         }
+        &::after{
+          right: inherit;
+          left: 47rem;
+          bottom: 0rem;
+          top: inherit;
+          transform: rotate(45deg);
+        }
     }
 
     &:nth-child(2){
         width: 46rem;
         margin-right: 4rem;
+        &::after{
+          display: none;
+        }
+        @media screen and (max-width: 800px){
+          order: 2;
+          margin: 0 auto;
+          transform: translateX(-3rem);
+          &::after{
+            transform: rotate(45deg);
+          }
+        }
         .how-works__img {
             margin-top: 1rem;
             margin-bottom: 4rem;
@@ -169,6 +197,14 @@ h2{
     }
     &:nth-child(3){
         margin-right: 9.8rem;
+        &::after{
+          display: block;
+          right: inherit;
+          left: -20rem;
+          bottom: 3rem;
+          top: inherit;
+          transform: rotate(-45deg);
+        }
         .how-works__img{
             margin-bottom: 3.75rem;
             margin-left: 3rem;
