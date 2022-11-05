@@ -2,9 +2,15 @@
   .container{
     padding-top:9rem;
     padding-left: 11rem;
+    @media (max-width:600px) {
+      padding-left: 0;
+    }
   }
   h2.title{
     margin-bottom: 0;
+    @media (max-width:600px) {
+      padding-right: 0;
+    }
   }
 
 
@@ -16,5 +22,8 @@
     margin-left: auto;
     width: 142rem;
     transform: translate(-4rem, -5rem);
+    @media (max-width:600px) {
+      transform: none;
+    }
   }
 }
