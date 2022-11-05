@@ -91,3 +91,17 @@
   }
 
 }
+
+@media(max-width:800px){
+  .section14-inner{
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+.section_custom .text-list__item div{
+text-align: center;
+}
+.section_custom .text-list__item div{
+  padding-left: 0;
+}
+}

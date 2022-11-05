@@ -165,4 +165,18 @@
   .solution__list::before{
     background-image: none;
   }
+  .decoration{
+    display: none;
+  }
+  .solution_li{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .solution__item + .solution__item{
+    margin-left: none;
+  }
+  .solution_title{
+    text-align: center;
+    margin: 0 auto;
+  }
 }
