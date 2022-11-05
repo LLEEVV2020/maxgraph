@@ -110,6 +110,9 @@ h2{
     h2{
         &.title{
             max-width: 65rem;
+            @media screen and (max-width: 800px){
+              max-width: 65rem;
+            }
             @media screen and (max-width: 560px){
               padding-right: 0;
 
