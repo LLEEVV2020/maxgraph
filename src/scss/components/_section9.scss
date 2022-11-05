@@ -2,6 +2,9 @@
   .container{
     padding-top: 8.2rem;
     padding-left: 11rem;
+    @media (max-width:800px) {
+      padding-left: 0;
+    }
   }
 
 }
@@ -18,10 +21,29 @@
     position: relative;
     z-index: 2;
     margin-bottom: 0;
+    @media (max-width:800px) {
+      margin-bottom: 4rem;
+    }
   }
   img{
     width: 190rem;
     transform: scale(1.03) translateX(-8.5rem) translateY(-0.9rem);
+    @media (max-width:800px) {
+      transform: none;
+      object-position: right;
+      object-fit: cover;
+      height: 70rem;
+    }
+    @media (max-width:650px) {
+
+      height: 55rem;
+    }
+    @media (max-width:550px) {
+      height: 48rem;
+    }
+    @media (max-width:440px) {
+      height: 41rem;
+    }
   }
 }
 
