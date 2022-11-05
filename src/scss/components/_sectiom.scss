@@ -13,6 +13,9 @@
         @media screen and (max-width: 800px){
           height: auto;
         }
+
+
+
         & > *{
             position: relative;
             z-index: 2;
@@ -86,6 +89,12 @@ h2{
 
 /*section item*/
 .section1{
+  @media screen and (max-width: 560px){
+    .container{
+      padding-right: 12rem;
+    }
+
+  }
     h2{
         &.title{
             max-width: 65rem;
@@ -147,6 +156,13 @@ h2{
    @media screen and (max-width: 800px){
     flex-wrap: wrap;
   }
+  @media screen and (max-width: 620px){
+    flex-direction: column;
+  }
+  @media screen and (max-width: 560px){
+    gap: 20rem;
+  }
+
 }
 
 .how-works__item{
@@ -169,6 +185,18 @@ h2{
           top: inherit;
           transform: rotate(45deg);
         }
+        @media screen and (max-width: 560px){
+          margin: 0 auto;
+          width: 49rem;
+
+          &::after{
+            transform: translate(-100%, 100%)rotate(90deg);
+            left: 50%;
+            bottom: -3rem;
+          }
+
+        }
+
     }
 
     &:nth-child(2){
@@ -185,6 +213,13 @@ h2{
             transform: rotate(45deg);
           }
         }
+        @media screen and (max-width: 620px){
+          order: inherit;
+        }
+        @media screen and (max-width: 560px){
+          margin: 0 auto;
+          width: 43rem;
+        }
         .how-works__img {
             margin-top: 1rem;
             margin-bottom: 4rem;
@@ -197,14 +232,40 @@ h2{
     }
     &:nth-child(3){
         margin-right: 9.8rem;
-        &::after{
-          display: block;
-          right: inherit;
-          left: -20rem;
-          bottom: 3rem;
-          top: inherit;
-          transform: rotate(-45deg);
+
+
+        @media screen and (max-width: 800px){
+          &::after{
+            display: block;
+            right: inherit;
+            left: -20rem;
+            bottom: 3rem;
+            top: inherit;
+            transform: rotate(-45deg);
+          }
         }
+        @media screen and (max-width: 620px){
+          margin-left: auto;
+          margin-right: 0;
+          &::after{
+            left: -12rem;
+            bottom: 3rem;
+            top: 0;
+            transform: rotate(45deg);
+          }
+        }
+        @media screen and (max-width: 560px){
+          margin: 0 auto;
+          width: 49rem;
+
+          &::after{
+            transform: translate(-100%, -100%) rotate(90deg);
+            left: 50%;
+            bottom: inherit;
+            top: -3rem;
+          }
+        }
+
         .how-works__img{
             margin-bottom: 3.75rem;
             margin-left: 3rem;
