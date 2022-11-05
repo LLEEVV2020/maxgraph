@@ -42,14 +42,7 @@
 @media (max-width:800px) {
   .section12__items{
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 }
 
-
-@media (max-width:450px) {
-  &__items_item{
-    width: 100%;
-
-  }
-
-}

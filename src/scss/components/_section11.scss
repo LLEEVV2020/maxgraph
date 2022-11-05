@@ -20,3 +20,11 @@
   width: 184.2rem;
   height: 79.8rem;
 }
+
+@media(max-width:790px){
+  .section11-img{
+    width: 170.2rem;
+    height: 79.8rem;
+   transform: scale(1)
+  }
+}
