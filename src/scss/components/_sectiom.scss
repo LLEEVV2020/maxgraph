@@ -10,6 +10,9 @@
         padding-left: 12rem;
         position: relative;
 
+        @media screen and (max-width: 800px){
+          height: auto;
+        }
         & > *{
             position: relative;
             z-index: 2;
@@ -42,6 +45,12 @@
             transform: translateX(84.9%);
             background-image: url(../img/svg/bg4.svg);
             right:  0;
+        }
+        @media screen and (max-width: 800px){
+          &::after, &::before{
+            display: none;
+            background-color: #f7faf9;
+          }
         }
     }
 
@@ -98,6 +107,10 @@ h2{
         width: 15.7rem;
         height: 18rem;
         transform: translateX(100%);
+
+        @media screen and (max-width: 800px){
+          display: none;
+        }
 
     }
 }
@@ -252,7 +265,7 @@ h2{
       background-image: url(../img/arhitek4.webp);
       background-size: cover;
       width: 52em;
-      height: 84.65rem;
+      height: 52.985em;
       position: absolute;
       right: 6.5rem;
       bottom: 0;
@@ -267,7 +280,9 @@ h2{
       position: absolute;
       right: -0.1rem;
       bottom: 5.79rem;
-
+      @media screen and (max-width: 800px){
+        display: none;
+      }
     }
   }
 }
