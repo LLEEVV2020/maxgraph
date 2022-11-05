@@ -1,6 +1,12 @@
 .section5 .container{
   padding-top: 6rem;
   padding-left: 10rem;
+  @media (max-width:700px) {
+    padding-left: 0;
+    h2.title{
+      padding-right: 0;
+    }
+  }
 }
 .efficiency{
   h2.title{
@@ -9,6 +15,19 @@
   }
   img{
     width: 161.7rem;
+  }
+  .mobile-img{
+    display: none;
+  }
+  @media (max-width:700px) {
+    img{
+      display: none;
+    }
+    .mobile-img{
+      display: block;
+      width: 62rem;
+      margin: auto;
+    }
   }
 }
 
