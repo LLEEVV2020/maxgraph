@@ -1,21 +1,38 @@
 .section12{
+
+  .container{
+
+    padding-top: 5.2rem;
+    padding-left: 11rem;
+  }
+  h2.title{
+    margin-bottom: 14rem;
+  }
+
   &__items{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 6rem;
   }
   &__items_item{
     text-align: center;
   }
   &__item-image{
-    width: 44rem;
-    margin-top: -35px;
-    height: 44rem;
+    width: 41rem;
+    height: 41rem;
   }
   &__item-title{
- font-size: 8rem;
+    font-size: 6rem;
+    margin: 0;
+    font-weight: 400;
+    margin-top: 3.9rem;
+    line-height: 1.735;
   }
   &__item-caption{
-font-size: 4rem;
+    font-size: 4rem;
+    color: #49423d;
+    margin: 0;
+     margin-top: 2rem;
   }
 }
