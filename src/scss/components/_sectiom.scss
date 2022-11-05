@@ -85,6 +85,8 @@ h2{
         @media screen and (max-width: 800px){
           font-size: 8rem;
           text-align: center;
+          max-width: inherit;
+          padding-right: 10rem;
           br{
             display: none;
           }
@@ -103,9 +105,9 @@ h2{
     h2{
         &.title{
             max-width: 65rem;
-            @media screen and (max-width: 800px){
-              max-width: inherit;
-              padding-right: 10rem;
+            @media screen and (max-width: 560px){
+              padding-right: 0;
+
             }
             margin-bottom: 1.6rem;
         }
@@ -411,17 +413,28 @@ h2{
   font-size: 3.9rem;
   color: #00396E;
   max-width: 135rem;
+  @media screen and (max-width: 800px){
+    max-width: inherit;
+  }
 }
 .differences__list{
   display: flex;
   position: relative;
   margin-left: 1rem;
+  @media (max-width:800px) {
+    flex-wrap: wrap;
+  }
+
 
 }
 .differences__list-first{
+
   color: #00396E;
   & > div:first-child{
     font-size: 22.9rem;
+    @media (max-width:600px) {
+      font-size: 17.1rem;
+    }
     font-weight: 900;
     line-height: .9;
     display: flex;
@@ -435,10 +448,24 @@ h2{
   }
   & > div:last-child{
     font-size: 9.1rem;
+
     margin-left: 1rem;
     line-height: 1;
     margin-top: 9rem;
     text-transform: lowercase;
+    @media (max-width:800px) {
+      margin-top: 0rem;
+    }
+    @media (max-width:600px) {
+      font-size: 6.1rem;
+      margin-left: 0;
+    }
+  }
+  @media (max-width:600px) {
+    text-align: center;
+    & > div:first-child{
+      justify-content: center;
+    }
   }
 }
 .differences{
@@ -453,6 +480,10 @@ h2{
   margin-top: 5.3rem;
   line-height: 1.2;
   margin-bottom: 3rem;
+  @media (max-width:600px) {
+    margin-bottom: 0 !important;
+  }
+
 }
 .differences__list .h3 ~ p{
   text-align: center;
@@ -460,8 +491,15 @@ h2{
   color: #49423d;/*темно серый*/
 }
 .differences__list{
+  li:first-child{
+    width: 100%;
+
+  }
   li:nth-child(2){
     margin-left: 5.5rem;
+    @media (max-width:800px) {
+      margin-left: 0;
+    }
     .h3{
       margin-bottom: 4.5rem;
     }
@@ -479,6 +517,18 @@ h2{
     .h3{
       margin-bottom: 9rem;
     }
+  }
+  @media (max-width:800px) {
+    li{
+      margin-left: 3rem !important;
+    }
+  }
+  @media (max-width:600px) {
+    li{
+      margin-left: 0 !important;
+      width: 45% !important;
+    }
+
   }
 }
 
