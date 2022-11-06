@@ -500,7 +500,9 @@ h2{
 }
 .differences__list{
   li:first-child{
+    @media (max-width:800px) {
     width: 100%;
+    }
 
   }
   li:nth-child(2){

@@ -11,6 +11,9 @@
 .section14-inner__image img {
   width: 71.25rem;
   transform: translate(-6.65rem, -13.8rem);
+  @media(max-width:800px){
+    transform: none;
+  }
 }
 
 

@@ -2,6 +2,12 @@
   .container{
     padding-top: 7.4rem;
     padding-left: 10rem;
+    @media(max-width:800px){
+      padding-left: 0;
+      h2.title{
+        padding-right: 0;
+      }
+    }
   }
 
   h2.title{
@@ -24,7 +30,9 @@
 @media(max-width:790px){
   .section11-img{
     width: 170.2rem;
-    height: 79.8rem;
-   transform: scale(1)
+    height: inherit;
+   transform: scale(1.01);
+   margin: 0 auto;
+    display: block;
   }
 }

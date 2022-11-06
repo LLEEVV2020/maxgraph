@@ -3,6 +3,9 @@
     width: 70rem;
     margin-left: auto;
     transform: translate(-7.2rem, -4rem);
+    @media(max-width:800px){
+      transform: none;
+    }
   }
 }
 
@@ -55,6 +58,15 @@
     font-size: 4rem;
     margin-bottom: 4.87rem;
     display: flex;
+
+    @media(max-width:800px){
+      width: 100%;
+      max-width: 103rem;
+      margin-right: auto;
+      margin-left: auto;
+
+    }
+
     span{
       font-weight: 600;
 
@@ -99,7 +111,7 @@
     text-align: center;
   }
 .section_custom .text-list__item div{
-text-align: center;
+
 }
 .section_custom .text-list__item div{
   padding-left: 0;
