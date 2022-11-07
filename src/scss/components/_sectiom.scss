@@ -113,7 +113,7 @@ h2 {
 .section1 {
   @media screen and (max-width: 560px) {
     .container {
-      padding-right: 12rem;
+      padding-right: 11.5rem;
     }
 
   }
@@ -172,7 +172,7 @@ h2 {
   min-height: 14.13rem;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 
   @media screen and (max-width: 800px) {
     min-height: inherit;
@@ -187,7 +187,7 @@ h2 {
   color: #00396e;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 
@@ -234,6 +234,12 @@ h2 {
         top: inherit;
         transform: rotate(45deg);
       }
+      .how-works__content{
+          margin-bottom: 12.5rem;
+          @media screen and (max-width: 560px) {
+            margin-bottom: 5.5rem;
+          }
+      }
     }
 
     @media screen and (max-width: 560px) {
@@ -242,7 +248,7 @@ h2 {
 
       &::after {
         transform: translate(-100%, 100%)rotate(90deg);
-        left: 57%;
+        left: 58%;
         bottom: -3rem;
       }
 
@@ -252,19 +258,18 @@ h2 {
 
   &:nth-child(2) {
     width: 46rem;
-    margin-right: 4rem;
 
-    &::after {
-      display: none;
-    }
+
 
     @media screen and (max-width: 800px) {
+      margin-right: 4rem;
       order: 2;
       margin: 0 auto;
       transform: translateX(-3rem);
 
       &::after {
         transform: rotate(45deg);
+        display: none;
       }
     }
 
@@ -275,6 +280,7 @@ h2 {
     @media screen and (max-width: 560px) {
       margin: 0 auto;
       width: 43rem;
+      transform: translateX(0);
     }
 
     .how-works__img {
