@@ -192,8 +192,11 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  overflow: hidden;
   width: 100%;
+  background-color: #F8FCFF;
+  z-index: 1;
+  position: relative;
 }
 
 .is-hidden {

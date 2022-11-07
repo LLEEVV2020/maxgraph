@@ -13,6 +13,9 @@
   margin-left: 4rem;
   font-weight: 900;
   margin-top: 0;
+  @media(max-width:800px){
+    margin-left: 0;
+  }
  }
  &-inner{
   display: flex;
@@ -21,6 +24,10 @@
 
   max-width: 139rem;
     margin: 0 auto;
+
+    @media(max-width:700px){
+      justify-content: space-around;
+    }
  }
 
  &__subtitle{
