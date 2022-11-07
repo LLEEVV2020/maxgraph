@@ -103,7 +103,9 @@
 
 @media(max-width:450px){
   .footer{
-
+    &-inner__left {
+      margin-left: 0;
+  }
     &__title{
       font-size: 15rem;
     }
