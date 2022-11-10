@@ -447,7 +447,8 @@ h2 {
   .architecture {
     position: relative;
 
-    &::after {
+    .architecture-img-after{
+    //&::after {
       content: "";
       background-image: url(../img/arhitek4.webp);
       background-size: cover;
@@ -458,7 +459,8 @@ h2 {
       bottom: 0;
     }
 
-    &::before {
+  .architecture-img-before {
+    //&::before {
       z-index: 1;
       content: "";
       background-image: url(../img/arhitek5.webp);
@@ -479,7 +481,8 @@ h2 {
       width: 100%;
       margin: 0 auto;
 
-      &::after {
+      .architecture-img-after {
+     // &::after {
         position: static;
         display: block;
       }
