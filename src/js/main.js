@@ -6,12 +6,19 @@ let preloader = document.getElementById("preloader");
 
 
 
-window.onload = function(){
-  preloader.classList.remove('preloader-off')
-setInterval(function(){
-  preloader.classList.add("hide-preloader")
-  preloader.classList.remove('preloader-off')
-},500)
+// window.onload = function(){
+//   preloader.classList.remove('preloader-off')
+// setInterval(function(){
+//   preloader.classList.add("hide-preloader")
+//   preloader.classList.remove('preloader-off')
+// },500)
+// }
+window.onload = function () {
+  document.body.classList.add('loaded_hiding');
+  window.setTimeout(function () {
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
+  }, 5000);
 }
 
 
