@@ -2,15 +2,16 @@ import './_vendor';
 import vars from './_vars';
 import './_functions';
 import './_components';
+let preloader = document.getElementById("preloader");
 
 
 
 window.onload = function(){
-let preloader = document.getElementById("preloader");
-preloader.classList.add("hide-preloader")
+  preloader.classList.remove('preloader-off')
 setInterval(function(){
   preloader.classList.add("hide-preloader")
-},2)
+  preloader.classList.remove('preloader-off')
+},500)
 }
 
 
