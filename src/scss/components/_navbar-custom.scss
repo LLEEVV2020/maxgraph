@@ -59,4 +59,9 @@
   //.nav-link{
   //  padding-top: 0;
   //}
+  .navbar-collapse{
+    @media (min-width: 992px){
+      height: inherit !important;
+    }
+  }
 }
