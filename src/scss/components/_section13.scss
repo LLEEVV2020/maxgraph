@@ -1,7 +1,8 @@
 .section13-inner__image{
   img{
     width: 70rem;
-    margin-left: auto;
+    margin:0 auto;
+    text-align: center;
     transform: translate(-7.2rem, -4rem);
     @media(max-width:800px){
       transform: none;
@@ -22,7 +23,7 @@
 .section13{
   .container{
     padding-top: 8.5rem;
-    padding-left: 11rem;
+    padding-left: 1rem;
   }
 
 
@@ -99,6 +100,7 @@
       text-transform: lowercase;
       font-size: 3.9rem;
       padding-left: 3.75rem;
+      text-align: left;
     }
   }
 
@@ -110,9 +112,6 @@
     margin: 0 auto;
     text-align: center;
   }
-.section_custom .text-list__item div{
-
-}
 .section_custom .text-list__item div{
   padding-left: 0;
 }
