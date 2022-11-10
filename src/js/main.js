@@ -32,3 +32,5 @@ $("a.nav-link").on("click", function(e){
   }, 800);
 });
 
+
+new WOW().init();
