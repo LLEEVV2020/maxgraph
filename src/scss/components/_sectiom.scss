@@ -4,7 +4,7 @@
 
   .container {
 
-    min-height: 112.6rem;
+   /* min-height: 112.6rem;*/
     padding-top: 9.2rem;
     padding-left: 12rem;
     position: relative;
@@ -43,6 +43,7 @@
 
     &::before {
       background-image: url(../img/svg/bg3.svg);
+      background-size: cover;
       z-index: 1;
       left: 0;
     }
@@ -50,6 +51,7 @@
     &::after {
       transform: translateX(84.9%);
       background-image: url(../img/svg/bg4.svg);
+      background-size: cover;
       right: 0;
     }
 
@@ -69,12 +71,14 @@
   .container {
     &::before {
       background-image: url(../img/svg/bg4.svg);
+      background-size: cover;
       z-index: 1;
       left: 0;
     }
 
     &::after {
       background-image: url(../img/svg/bg4.svg);
+      background-size: cover;
       right: inherit;
       transform: translateX(-84.9%) scaleX(-1);
     }
