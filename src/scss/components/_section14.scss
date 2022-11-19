@@ -1,7 +1,7 @@
 .section14 {
   .container {
     padding-top: 8.3rem;
-    padding-left: 11rem;
+    padding-left: 1rem;
   }
   h3 {
     font-size: 5.93rem;
@@ -29,6 +29,11 @@ text-align: center;
 }
 .section_custom .text-list__item div{
   padding-left: 0;
+}
+.section14__title,
+.section14__subtitle {
+  text-align: center;
+  margin: 0 auto;
 }
 }
 

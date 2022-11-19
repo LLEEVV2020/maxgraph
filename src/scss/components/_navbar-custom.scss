@@ -3,14 +3,14 @@
   padding-left: 12rem;
   padding-right: 12rem;
   font-size: 3.1rem;
-  padding-top: .08em;
-  padding-bottom: .08em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   box-shadow: 0px 0px 2rem rgb(127 137 161 / 30%);
 
   @media (max-width: 1300px){
     font-size: 3.9rem;
-    padding-top: 0.2em;
-    padding-bottom: 0.25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.525em;
   }
   @media (max-width: 700px){
     padding-left: 7rem;
@@ -35,19 +35,21 @@
 
   .navbar-brand{
     img{
-      width: 25rem;
+      width: 30rem;
     }
   }
 
   @media (max-width: 991px){
     .navbar-toggler {
-      font-size: 3.5rem;
+      font-size: 4rem;
+      padding: 1.25rem 1.75rem;
+      z-index: 5;
     }
 
     .nav-link{
       padding: 1.75rem 1rem;
     }
-    .navbar-collapse{
+    .navbar-collapse .navbar-nav{
       margin-top: 3rem;
       margin-bottom: 3rem;
     }
@@ -57,4 +59,9 @@
   //.nav-link{
   //  padding-top: 0;
   //}
+  .navbar-collapse{
+    @media (min-width: 992px){
+      height: inherit !important;
+    }
+  }
 }
